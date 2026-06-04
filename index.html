@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/palmtree.ico" type="image/x-icon">
+
+  <title>شركة الواحات للاستثمار الزراعي | الواحات البحرية</title>
+  <meta name="description" content="أجود الأراضي والمزارع المنتجة في الواحات البحرية - استثمار زراعي آمن ومربح">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    :root {
+      --emerald-950: #022c22;
+      --emerald-900: #064e3b;
+      --emerald-800: #115e59;
+      --emerald-600: #10b981;
+      --emerald-400: #34d399;
+      --emerald-50:  #ecfdf5;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--emerald-950);
+      color: white;
+    }
+
+    .navbar {
+      background-color: rgba(2, 44, 34, 0.95) !important;
+      backdrop-filter: blur(12px);
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), 
+                  url('https://images.pexels.com/photos/2132250/pexels-photo-2132250.jpeg') center/cover no-repeat fixed;
+    }
+
+    .logo-subtitle {
+      color: var(--emerald-400);
+    }
+
+    .service-card {
+      background-color: rgba(17, 94, 89, 0.6); /* bg-emerald-800/60 */
+      transition: all 0.4s ease;
+    }
+    .service-card:hover {
+      background-color: #1f7a6e; /* hover:bg-emerald-700 */
+      transform: translateY(-10px);
+    }
+
+    .offer-card {
+      background: linear-gradient(135deg, var(--emerald-50), #ffffff);
+      border: 1px solid #a7f3d0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom" style="border-color: #115e59;">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <div class="fs-1 me-3">🌴</div>
+        <div>
+          <h1 class="h3 mb-0 fw-bold text-white">الواحات</h1>
+          <p class="logo-subtitle small mb-0">للاستثمار الزراعي</p>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto gap-4">
+          <li><a class="nav-link text-white" href="#about">من نحن</a></li>
+          <li><a class="nav-link text-white" href="#services">خدماتنا</a></li>
+          <li><a class="nav-link text-white" href="#offers">العروض</a></li>
+        </ul>
+
+        <a href="https://wa.me/201281331691" class="btn d-flex align-items-center gap-2 fw-bold px-4 py-3"
+           style="background-color: #10b981; color: white; border-radius: 9999px;">
+          <i class="fab fa-whatsapp fa-2x"></i>
+          <span>واتساب</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero text-center d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-4">استثمر في الواحات البحرية</h1>
+      <p class="fs-3 mb-5" style="color: #d1fae5;">أجود الأراضي والمزارع المنتجة</p>
+      
+      <div class="d-flex flex-column flex-sm-row gap-4 justify-content-center">
+        <button onclick="document.getElementById('offers').scrollIntoView({ behavior: 'smooth' })" 
+                class="btn btn-lg px-5 py-4 fw-bold" style="background-color: #10b981; color: white;">
+          اكتشف العروض الحالية
+        </button>
+        <button onclick="window.open('https://wa.me/201281331691?text=السلام%20عليكم،%20عايز%20تفاصيل%20العروض%20الزراعية')" 
+                class="btn btn-light btn-lg px-5 py-4 fw-bold">
+          تواصل معنا الآن
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-white text-dark">
+    <div class="container py-5">
+      <h2 class="text-center display-5 fw-bold mb-5" style="color: #064e3b;">من نحن</h2>
+      <!-- ... (نفس الكود السابق) ... -->
+    </div>
+  </section>
+
+  <!-- Services - محسنة جداً -->
+  <section id="services" class="py-5" style="background-color: #064e3b;">
+    <div class="container py-5">
+      <h2 class="text-center display-5 fw-bold mb-5 text-white">خدماتنا</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card text-center p-5 text-white rounded-4">
+            <i class="fas fa-leaf fa-5x mb-4" style="color: #34d399;"></i>
+            <h3 class="fw-bold">تسويق أراضي زراعية</h3>
+            <p class="text-emerald-100">أراضي ومزارع مختارة بعناية فائقة</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card text-center p-5 text-white rounded-4">
+            <i class="fas fa-shield-alt fa-5x mb-4" style="color: #34d399;"></i>
+            <h3 class="fw-bold">ضمان قانوني كامل</h3>
+            <p class="text-emerald-100">تقنين - تسجيل - إجراءات آمنة</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card text-center p-5 text-white rounded-4">
+            <i class="fas fa-solar-panel fa-5x mb-4" style="color: #34d399;"></i>
+            <h3 class="fw-bold">مزارع مجهزة</h3>
+            <p class="text-emerald-100">آبار - طاقة شمسية - ري - استراحات</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Offer -->
+  <section id="offers" class="py-5 bg-white">
+    <div class="container py-5">
+      <h2 class="text-center display-5 fw-bold mb-5" style="color: #064e3b;">العروض الحالية</h2>
+      
+      <div class="offer-card p-5 shadow rounded-4" style="background: linear-gradient(135deg, #ecfdf5, #ffffff); border: 1px solid #a7f3d0;">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img src="Images/mazra3a.png" alt="مزرعة نخيل" 
+                 class="img-fluid rounded-4" 
+                 style="height: 480px; width:100%; object-fit:cover;">
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold" style="color: #064e3b;">40 فدان نخيل وكمثرى - جاهزة للإنتاج</h3>
+            <h2 class="fw-bold mb-4" style="color: #10b981; font-size: 2.8rem;">150,000 جنيه / الفدان</h2>
+            
+            <p class="text-danger fw-bold fs-5 mb-3">🚀 لسرعة البيع</p>
+            
+            <ul class="list-unstyled fs-5" style="color: #1f2937;">
+              <li class="mb-3"><i class="fas fa-map-marker-alt text-success me-3"></i> قرية الحارة - الواحات البحرية (الجيزة)</li>
+              <li class="mb-3"><i class="fas fa-tree text-success me-3"></i> ≈ 1600 نخلة (عمر 5-6 سنوات) + كمثرى طرحة</li>
+              <li class="mb-3"><i class="fas fa-tint text-success me-3"></i> ملوحة 250 جزء في المليون - مياه صالحة للشرب</li>
+              <li class="mb-3"><i class="fas fa-bolt text-success me-3"></i> بئر 115م - 20 حصان + طاقة شمسية</li>
+              <li class="mb-3"><i class="fas fa-home text-success me-3"></i> استراحتين + حوش مواشي كبير + حوض تسميد 4×8</li>
+            </ul>
+
+            <div class="mt-4 p-4 bg-white border rounded-3" style="color: #1f2937;">
+              <strong>مميزات إضافية:</strong><br>
+              • تقنين على 4 سنوات (70 ألف للفدان)<br>
+              • بجانب شركة سيكم (أكبر شركة نباتات طبية)<br>
+              • تصوير جوي جاهز - يمكن نقل الملكية مباشرة
+            </div>
+
+            <button onclick="window.open('https://wa.me/201281331691?text=السلام%20عليكم،%20مهتم%20بمزرعة%20الـ40%20فدان%20في%20قرية%20الحارة')" 
+                    class="btn w-100 py-4 fw-bold fs-5 mt-4"
+                    style="background-color: #10b981; color: white; border: none;">
+              تواصل معنا عبر واتساب للتفاصيل والزيارة
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-emerald-950 text-white py-5">
+    <div class="container text-center py-5">
+      <p class="fs-2 mb-5">جاهز تبدأ استثمارك الزراعي الناجح؟</p>
+      
+      <div class="d-flex flex-column flex-sm-row gap-4 justify-content-center">
+        <a href="https://wa.me/201281331691" class="btn btn-success btn-lg px-5 py-4 d-flex align-items-center gap-3">
+          <i class="fab fa-whatsapp fa-2x"></i> واتساب مباشر
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61590743455126" target="_blank" class="btn btn-primary btn-lg px-5 py-4 d-flex align-items-center gap-3">
+          <i class="fab fa-facebook fa-2x"></i> فيسبوك
+        </a>
+      </div>
+
+      <p class="mt-5 text-emerald-400">© 2026 شركة الواحات للاستثمار الزراعي</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
