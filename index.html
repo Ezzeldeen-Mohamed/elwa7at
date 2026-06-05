@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+
+  <meta property="og:title" content="شركة الواحات للاستثمار الزراعي">
+  <meta property="og:description" content="أجود الأراضي والمزارع المنتجة في الواحات البحرية">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Images/mazra3a.png">
+    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="Images/palmtree.ico" type="image/x-icon">
@@ -56,6 +62,33 @@
       border: 1px solid #a7f3d0;
     }
   </style>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '3159353120936405');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3159353120936405&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
 </head>
 <body>
 
@@ -81,7 +114,7 @@
           <li><a class="nav-link text-white" href="#offers">العروض</a></li>
         </ul>
 
-        <a href="https://wa.me/201281331691" class="btn d-flex align-items-center gap-2 fw-bold px-4 py-3"
+       <a href="https://wa.me/201281331691" target="_blank" onclick="fbq('track','Contact')"  class="btn d-flex align-items-center gap-2 fw-bold px-4 py-3"
            style="background-color: #10b981; color: white; border-radius: 9999px;">
           <i class="fab fa-whatsapp fa-2x"></i>
           <span>واتساب</span>
@@ -101,7 +134,8 @@
                 class="btn btn-lg px-5 py-4 fw-bold" style="background-color: #10b981; color: white;">
           اكتشف العروض الحالية
         </button>
-        <button onclick="window.open('https://wa.me/201281331691?text=السلام%20عليكم،%20عايز%20تفاصيل%20العروض%20الزراعية')" 
+        <button onclick="fbq('track','Contact');
+        window.open('https://wa.me/201281331691?text=السلام%20عليكم،%20عايز%20تفاصيل%20العروض%20الزراعية');"
                 class="btn btn-light btn-lg px-5 py-4 fw-bold">
           تواصل معنا الآن
         </button>
@@ -180,7 +214,7 @@
               • تصوير جوي جاهز - يمكن نقل الملكية مباشرة
             </div>
 
-            <button onclick="window.open('https://wa.me/201281331691?text=السلام%20عليكم،%20مهتم%20بمزرعة%20الـ40%20فدان%20في%20قرية%20الحارة')" 
+            <button onclick="fbq('track','Lead');window.open('https://wa.me/201281331691?text=السلام%20عليكم،%20مهتم%20بمزرعة%20الـ40%20فدان%20في%20قرية%20الحارة');"
                     class="btn w-100 py-4 fw-bold fs-5 mt-4"
                     style="background-color: #10b981; color: white; border: none;">
               تواصل معنا عبر واتساب للتفاصيل والزيارة
@@ -198,18 +232,40 @@
       <p class="fs-2 mb-5">جاهز تبدأ استثمارك الزراعي الناجح؟</p>
       
       <div class="d-flex flex-column flex-sm-row gap-4 justify-content-center">
-        <a href="https://wa.me/201281331691" class="btn btn-success btn-lg px-5 py-4 d-flex align-items-center gap-3">
+        <a href="https://wa.me/201281331691" target="_blank" onclick="fbq('track','Contact')" class="btn btn-success btn-lg px-5 py-4 d-flex align-items-center gap-3">
           <i class="fab fa-whatsapp fa-2x"></i> واتساب مباشر
         </a>
         <a href="https://www.facebook.com/profile.php?id=61590743455126" target="_blank" class="btn btn-primary btn-lg px-5 py-4 d-flex align-items-center gap-3">
           <i class="fab fa-facebook fa-2x"></i> فيسبوك
         </a>
+        <a href="https://instagram.com/elwa7at"target="_blank"class="btn btn-danger btn-lg px-5 py-4 d-flex align-items-center gap-3">
+          <i class="fab fa-instagram fa-2x"></i>
+          انستجرام
+      </a>
       </div>
 
       <p class="mt-5 text-emerald-400">© 2026 شركة الواحات للاستثمار الزراعي</p>
     </div>
   </footer>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const offer = document.getElementById("offers");
+    let tracked = false;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting && !tracked){
+          fbq('track', 'ViewContent');
+          tracked = true;
+        }
+      });
+    });
+
+    observer.observe(offer);
+  });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
